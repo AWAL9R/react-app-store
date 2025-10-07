@@ -12,7 +12,7 @@ const Home = () => {
             <Hero />
             <Trust />
             <Suspense fallback={<h1>Loading....</h1>}>
-            <HomeApps dataPromise={dataPromise}/>
+            <HomeApps isHome={true} dataPromise={dataPromise}/>
             </Suspense>
         </>
     );
