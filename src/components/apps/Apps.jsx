@@ -6,8 +6,7 @@ import Trust from '../Trust';
 const Apps = () => {
     return (
          <>
-            <Hero />
-            <Trust />
+           Apps
         </>
     );
 };
