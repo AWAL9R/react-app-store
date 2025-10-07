@@ -1,0 +1,992 @@
+[
+    {
+        "image": "",
+        "title": "TaskMaster Pro",
+        "companyName": "NextWave Labs",
+        "id": 1,
+        "description": "TaskMaster Pro is your all-in-one productivity companion designed to help you stay organized, focused, and efficient. Manage tasks, set reminders, track goals, and collaborate effortlessly with your team. With intelligent sorting, dark mode, and cloud backup, you’ll never lose progress again. Customize your workspace, visualize performance with smart analytics, and integrate with popular tools like Google Calendar or Slack. Whether you’re a student, freelancer, or business professional, TaskMaster Pro keeps you on top of everything. Work smarter, plan better, and achieve more — all from a single, intuitive app designed for everyday success.",
+        "size": 45,
+        "reviews": 78,
+        "ratingAvg": 4,
+        "downloads": 23,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 2
+            },
+            {
+                "name": "2 star",
+                "count": 3
+            },
+            {
+                "name": "3 star",
+                "count": 7
+            },
+            {
+                "name": "4 star",
+                "count": 25
+            },
+            {
+                "name": "5 star",
+                "count": 41
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "Pixel Rush",
+        "companyName": "SkyForge Studios",
+        "id": 2,
+        "description": "Pixel Rush is a fast-paced arcade adventure blending stunning pixel art with thrilling gameplay. Jump, dodge, and collect power-ups across multiple vibrant worlds. Compete in endless modes, unlock characters, and challenge your friends on the leaderboard. Smooth controls and catchy retro music make every run exciting. Customize your avatar with rare skins, master special abilities, and aim for record-breaking scores. Pixel Rush delivers a perfect mix of nostalgia and adrenaline for both casual and hardcore gamers. Test your reflexes, conquer challenges, and immerse yourself in a world built for speed and fun.",
+        "size": 60,
+        "reviews": 92,
+        "ratingAvg": 5,
+        "downloads": 41,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 1
+            },
+            {
+                "name": "2 star",
+                "count": 3
+            },
+            {
+                "name": "3 star",
+                "count": 6
+            },
+            {
+                "name": "4 star",
+                "count": 28
+            },
+            {
+                "name": "5 star",
+                "count": 54
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "NoteEase",
+        "companyName": "PaperByte Inc",
+        "id": 3,
+        "description": "NoteEase simplifies the way you capture, organize, and recall ideas. Write quick notes, record audio memos, attach photos, and sync effortlessly across devices. Its minimal design makes note-taking fast and distraction-free. Tag, color-code, and search notes instantly with smart filters. Offline support ensures access anytime, anywhere. NoteEase also supports handwriting input and secure encryption for private data. Ideal for students, writers, and professionals, this app redefines digital note-taking with simplicity and reliability. Keep your thoughts structured, your creativity flowing, and your productivity at its peak with NoteEase — the notebook you’ll actually use.",
+        "size": 35,
+        "reviews": 58,
+        "ratingAvg": 4,
+        "downloads": 19,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 4
+            },
+            {
+                "name": "2 star",
+                "count": 5
+            },
+            {
+                "name": "3 star",
+                "count": 8
+            },
+            {
+                "name": "4 star",
+                "count": 18
+            },
+            {
+                "name": "5 star",
+                "count": 23
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "FitTrack",
+        "companyName": "ZenMotion Health",
+        "id": 4,
+        "description": "FitTrack helps you achieve your fitness goals through smart tracking, daily challenges, and personalized insights. Monitor your workouts, nutrition, sleep, and hydration in one simple interface. The app uses AI to recommend exercise routines and meal plans based on your activity history. Visualize your progress with charts, milestones, and badges. FitTrack syncs with major wearables and health apps, ensuring all your data stays connected. Whether you’re a beginner or athlete, FitTrack motivates you to stay active and healthy with gamified achievements and an intuitive, inspiring experience designed for lasting lifestyle improvement.",
+        "size": 55,
+        "reviews": 88,
+        "ratingAvg": 5,
+        "downloads": 47,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 3
+            },
+            {
+                "name": "2 star",
+                "count": 2
+            },
+            {
+                "name": "3 star",
+                "count": 5
+            },
+            {
+                "name": "4 star",
+                "count": 27
+            },
+            {
+                "name": "5 star",
+                "count": 51
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "PhotoVerse",
+        "companyName": "SnapForge Labs",
+        "id": 5,
+        "description": "PhotoVerse is your creative photo editor and visual playground. Enhance, retouch, and stylize photos with AI filters, precision tools, and professional-grade effects. Adjust lighting, colors, and backgrounds in one tap. Batch edit, remove objects, and create cinematic presets with ease. PhotoVerse supports RAW and high-resolution files for detailed editing. Share your art directly to social media or store it in the cloud. Whether you’re editing portraits or landscapes, PhotoVerse delivers studio-quality results instantly. Simple for beginners yet powerful for experts — it’s everything you need to make your photos truly unforgettable.",
+        "size": 80,
+        "reviews": 73,
+        "ratingAvg": 4,
+        "downloads": 29,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 5
+            },
+            {
+                "name": "2 star",
+                "count": 6
+            },
+            {
+                "name": "3 star",
+                "count": 9
+            },
+            {
+                "name": "4 star",
+                "count": 23
+            },
+            {
+                "name": "5 star",
+                "count": 30
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "SoundFlow",
+        "companyName": "EchoByte Media",
+        "id": 6,
+        "description": "SoundFlow brings your music experience to life with stunning sound optimization and smart playlists. Stream, organize, and discover millions of tracks tailored to your mood. Enjoy seamless transitions, offline playback, and cross-device syncing. SoundFlow’s adaptive equalizer enhances every note, delivering clarity and depth like never before. Create collaborative playlists with friends or explore trending genres daily. Minimal interface, zero distractions — just pure rhythm and flow. Whether you’re working, studying, or relaxing, SoundFlow helps you tune into the perfect vibe every time. Music that moves with you, wherever you go.",
+        "size": 52,
+        "reviews": 69,
+        "ratingAvg": 5,
+        "downloads": 34,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 2
+            },
+            {
+                "name": "2 star",
+                "count": 3
+            },
+            {
+                "name": "3 star",
+                "count": 8
+            },
+            {
+                "name": "4 star",
+                "count": 22
+            },
+            {
+                "name": "5 star",
+                "count": 34
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "CodePilot",
+        "companyName": "DevForge Systems",
+        "id": 7,
+        "description": "CodePilot is your intelligent coding assistant that simplifies software development across multiple languages. Write, debug, and test code seamlessly in one lightweight environment. With real-time syntax checking, AI auto-completion, and project templates, CodePilot accelerates your workflow. Integrated version control, snippet management, and customizable themes enhance productivity and comfort. It supports offline editing and auto-saves your work, ensuring you never lose progress. Ideal for beginners and pros, CodePilot adapts to your coding style and helps you learn faster. Focus on logic, not syntax — build smarter, cleaner, and more efficient code effortlessly.",
+        "size": 48,
+        "reviews": 57,
+        "ratingAvg": 4,
+        "downloads": 27,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 3
+            },
+            {
+                "name": "2 star",
+                "count": 4
+            },
+            {
+                "name": "3 star",
+                "count": 10
+            },
+            {
+                "name": "4 star",
+                "count": 20
+            },
+            {
+                "name": "5 star",
+                "count": 20
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "Weatherly",
+        "companyName": "BlueSky Digital",
+        "id": 8,
+        "description": "Weatherly delivers hyper-accurate forecasts, real-time radar maps, and intelligent alerts. Track storms, humidity, and temperature trends worldwide with a clean, interactive interface. Set favorite locations and get instant updates on weather shifts, air quality, and UV index. Weatherly’s smart widgets keep vital data at your fingertips. With offline support and AI-driven predictions, it’s more than just a forecast — it’s a personal weather guide. Perfect for travelers, outdoor enthusiasts, and daily planners. Stay informed, stay safe, and plan every day with confidence using Weatherly’s precision-powered meteorological intelligence.",
+        "size": 40,
+        "reviews": 62,
+        "ratingAvg": 5,
+        "downloads": 31,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 2
+            },
+            {
+                "name": "2 star",
+                "count": 5
+            },
+            {
+                "name": "3 star",
+                "count": 8
+            },
+            {
+                "name": "4 star",
+                "count": 21
+            },
+            {
+                "name": "5 star",
+                "count": 26
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "Learnify",
+        "companyName": "EduSmart Co.",
+        "id": 9,
+        "description": "Learnify transforms education with interactive courses, quizzes, and video lessons designed for self-paced learning. Covering subjects from coding to design, it provides adaptive progress tracking and offline mode for uninterrupted study. Create custom playlists, bookmark lessons, and join discussion boards to collaborate globally. Learnify’s AI tutor helps identify weak areas and recommends exercises to strengthen them. Whether you’re preparing for exams or learning a new skill, Learnify adapts to your style. Intuitive, modern, and effective — it’s the smarter way to learn anything, anywhere, anytime with personalized educational experiences.",
+        "size": 70,
+        "reviews": 85,
+        "ratingAvg": 5,
+        "downloads": 44,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 1
+            },
+            {
+                "name": "2 star",
+                "count": 4
+            },
+            {
+                "name": "3 star",
+                "count": 9
+            },
+            {
+                "name": "4 star",
+                "count": 26
+            },
+            {
+                "name": "5 star",
+                "count": 45
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "SafeVault",
+        "companyName": "CipherLock Technologies",
+        "id": 10,
+        "description": "SafeVault secures your digital life with encrypted storage for passwords, files, and personal data. Built with military-grade encryption, biometric unlock, and zero-knowledge architecture, your privacy stays fully protected. Easily organize sensitive information, generate strong passwords, and sync securely across devices. SafeVault automatically fills credentials while keeping data offline if desired. Designed for simplicity and power, it’s ideal for individuals, teams, and businesses needing top-tier protection. Never worry about data breaches or forgotten passwords again. SafeVault gives you peace of mind, convenience, and total control over your digital identity.",
+        "size": 33,
+        "reviews": 66,
+        "ratingAvg": 5,
+        "downloads": 25,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 3
+            },
+            {
+                "name": "2 star",
+                "count": 3
+            },
+            {
+                "name": "3 star",
+                "count": 5
+            },
+            {
+                "name": "4 star",
+                "count": 21
+            },
+            {
+                "name": "5 star",
+                "count": 34
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "MindSpace",
+        "companyName": "CalmTech Labs",
+        "id": 11,
+        "description": "MindSpace helps you find balance through guided meditation, breathing exercises, and mindfulness sessions designed for every mood. Customize your daily routine, reduce stress, and improve focus with scientifically backed programs. Beautiful visuals, ambient sounds, and goal tracking make relaxation effortless. MindSpace includes sleep stories, focus timers, and progress insights. Whether you’re starting your mindfulness journey or deepening your practice, MindSpace adapts to your needs. Feel calmer, think clearer, and live more intentionally — all through a simple, elegant app that promotes peace and emotional well-being in your daily life.",
+        "size": 42,
+        "reviews": 59,
+        "ratingAvg": 5,
+        "downloads": 30,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 2
+            },
+            {
+                "name": "2 star",
+                "count": 3
+            },
+            {
+                "name": "3 star",
+                "count": 8
+            },
+            {
+                "name": "4 star",
+                "count": 19
+            },
+            {
+                "name": "5 star",
+                "count": 27
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "ShopSmart",
+        "companyName": "RetailEdge Global",
+        "id": 12,
+        "description": "ShopSmart is your ultimate shopping companion, bringing deals, coupons, and price tracking into one clean interface. Compare products across multiple stores, create wishlists, and receive real-time alerts when prices drop. ShopSmart’s smart scanner reads barcodes for instant info and reviews. Discover trending items and personalize recommendations based on shopping habits. Secure checkout links and order tracking keep everything simple and organized. Whether you’re bargain hunting or comparing specs, ShopSmart helps you save money and shop smarter. Convenience, control, and savings — all in your pocket, wherever you go.",
+        "size": 58,
+        "reviews": 72,
+        "ratingAvg": 4,
+        "downloads": 33,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 3
+            },
+            {
+                "name": "2 star",
+                "count": 4
+            },
+            {
+                "name": "3 star",
+                "count": 9
+            },
+            {
+                "name": "4 star",
+                "count": 25
+            },
+            {
+                "name": "5 star",
+                "count": 31
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "TravelGo",
+        "companyName": "SkyTrail Technologies",
+        "id": 13,
+        "description": "TravelGo simplifies trip planning with intelligent itineraries, flight tracking, and hotel booking tools in one place. Explore destinations, view local attractions, and manage bookings effortlessly. Offline maps and expense trackers make travel smoother and stress-free. With currency conversion, language tips, and real-time updates, you’re always prepared. Share your travel plans with friends or discover curated trip ideas for inspiration. TravelGo’s minimalist design ensures an easy experience from takeoff to return. Perfect for explorers, families, or business travelers — plan, book, and experience your next journey the smart, simple way.",
+        "size": 64,
+        "reviews": 90,
+        "ratingAvg": 5,
+        "downloads": 46,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 2
+            },
+            {
+                "name": "2 star",
+                "count": 4
+            },
+            {
+                "name": "3 star",
+                "count": 8
+            },
+            {
+                "name": "4 star",
+                "count": 24
+            },
+            {
+                "name": "5 star",
+                "count": 52
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "GameHub",
+        "companyName": "LunaByte Entertainment",
+        "id": 14,
+        "description": "GameHub unites all your favorite games and gaming tools in one seamless app. Discover new titles, manage installations, and track in-game achievements effortlessly. Stay updated on releases, patches, and events across platforms. Chat with friends, create groups, and share highlights from your sessions. GameHub’s recommendation engine learns your playstyle to suggest games you’ll love. Lightweight, fast, and visually stunning, it enhances the entire gaming experience. From casual gamers to pros, GameHub makes discovery, communication, and organization easy, keeping your digital world perfectly in sync for endless entertainment.",
+        "size": 85,
+        "reviews": 95,
+        "ratingAvg": 5,
+        "downloads": 50,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 2
+            },
+            {
+                "name": "2 star",
+                "count": 4
+            },
+            {
+                "name": "3 star",
+                "count": 9
+            },
+            {
+                "name": "4 star",
+                "count": 25
+            },
+            {
+                "name": "5 star",
+                "count": 55
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "DocuSignify",
+        "companyName": "PaperChain Systems",
+        "id": 15,
+        "description": "DocuSignify allows you to sign, manage, and store important documents securely. Upload PDFs, add digital signatures, and share instantly with clients or teammates. The app ensures full compliance with global e-signature standards, providing authenticity and legal validity. Manage multiple projects, set reminders, and track signing progress in real time. DocuSignify includes encrypted cloud storage for confidential files and supports offline signing. Whether for contracts, invoices, or agreements, DocuSignify delivers simplicity and security in every step. Save time, stay organized, and sign smarter with this professional-grade document management solution.",
+        "size": 39,
+        "reviews": 61,
+        "ratingAvg": 4,
+        "downloads": 28,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 3
+            },
+            {
+                "name": "2 star",
+                "count": 4
+            },
+            {
+                "name": "3 star",
+                "count": 7
+            },
+            {
+                "name": "4 star",
+                "count": 19
+            },
+            {
+                "name": "5 star",
+                "count": 28
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "CryptoVault",
+        "companyName": "BlockWave Technologies",
+        "id": 16,
+        "description": "CryptoVault makes digital asset management effortless and secure. Track your crypto portfolio, monitor market prices, and execute trades safely from one dashboard. With multi-wallet support, biometric security, and offline backup options, your investments stay protected at all times. Real-time analytics and price alerts help you make informed decisions instantly. CryptoVault also offers beginner-friendly tutorials and portfolio performance charts. Designed for both traders and investors, it combines simplicity with security. Manage, grow, and safeguard your assets confidently with CryptoVault — your personal command center for the decentralized financial world.",
+        "size": 50,
+        "reviews": 75,
+        "ratingAvg": 5,
+        "downloads": 38,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 2
+            },
+            {
+                "name": "2 star",
+                "count": 4
+            },
+            {
+                "name": "3 star",
+                "count": 6
+            },
+            {
+                "name": "4 star",
+                "count": 22
+            },
+            {
+                "name": "5 star",
+                "count": 41
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "Artify",
+        "companyName": "VisionCraft Studio",
+        "id": 17,
+        "description": "Artify transforms photos into stunning artworks using advanced AI and customizable filters. Choose from painting styles, sketch effects, and modern art templates to create unique visuals. Adjust tones, details, and color gradients for precise results. Artify’s clean interface makes editing intuitive for everyone. Share your creations directly to social media or save them in high resolution. With offline rendering and batch conversion, Artify is perfect for artists, designers, and hobbyists. Unleash creativity and turn imagination into art effortlessly with this intelligent, lightweight, and beautifully designed photo art application.",
+        "size": 77,
+        "reviews": 68,
+        "ratingAvg": 5,
+        "downloads": 36,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 1
+            },
+            {
+                "name": "2 star",
+                "count": 3
+            },
+            {
+                "name": "3 star",
+                "count": 9
+            },
+            {
+                "name": "4 star",
+                "count": 21
+            },
+            {
+                "name": "5 star",
+                "count": 34
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "BudgetMate",
+        "companyName": "FinLogic Apps",
+        "id": 18,
+        "description": "BudgetMate helps you manage your money smarter with intuitive expense tracking and analytics. Log income, categorize spending, and set savings goals with ease. The dashboard visualizes where your money goes using simple charts and summaries. BudgetMate’s alerts prevent overspending, and its smart tips guide you toward financial health. Export reports or sync securely across devices. Ideal for individuals, families, or small businesses looking to take control of finances. With zero clutter and maximum clarity, BudgetMate simplifies money management and keeps you financially confident every single day.",
+        "size": 38,
+        "reviews": 55,
+        "ratingAvg": 4,
+        "downloads": 24,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 4
+            },
+            {
+                "name": "2 star",
+                "count": 5
+            },
+            {
+                "name": "3 star",
+                "count": 8
+            },
+            {
+                "name": "4 star",
+                "count": 16
+            },
+            {
+                "name": "5 star",
+                "count": 22
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "CleanBoost",
+        "companyName": "SysCore Tools",
+        "id": 19,
+        "description": "CleanBoost keeps your device fast, smooth, and optimized. With one tap, remove junk files, free RAM, and boost system performance instantly. Real-time monitoring ensures your CPU, battery, and storage are always under control. CleanBoost includes app management, cache cleaning, and background process blocking for peak efficiency. Lightweight yet powerful, it enhances both speed and stability. Perfect for users who value performance and longevity, CleanBoost is your go-to system optimizer for keeping devices healthy, cool, and running at their best every day.",
+        "size": 31,
+        "reviews": 63,
+        "ratingAvg": 4,
+        "downloads": 26,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 3
+            },
+            {
+                "name": "2 star",
+                "count": 6
+            },
+            {
+                "name": "3 star",
+                "count": 9
+            },
+            {
+                "name": "4 star",
+                "count": 18
+            },
+            {
+                "name": "5 star",
+                "count": 27
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "StreamBox",
+        "companyName": "NovaPlay Media",
+        "id": 20,
+        "description": "StreamBox offers seamless movie and TV streaming in stunning HD. Explore thousands of titles, personalized recommendations, and curated playlists that match your taste. Download shows for offline viewing or cast them directly to your TV. With minimal buffering, adaptive quality, and smart search, entertainment has never been smoother. StreamBox supports multiple profiles, parental controls, and watchlists. Whether you’re into blockbusters, documentaries, or indie gems, StreamBox delivers endless entertainment right at your fingertips with intuitive navigation and uninterrupted playback.",
+        "size": 90,
+        "reviews": 97,
+        "ratingAvg": 5,
+        "downloads": 53,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 1
+            },
+            {
+                "name": "2 star",
+                "count": 3
+            },
+            {
+                "name": "3 star",
+                "count": 7
+            },
+            {
+                "name": "4 star",
+                "count": 27
+            },
+            {
+                "name": "5 star",
+                "count": 59
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "PhotoSnap",
+        "companyName": "PixelWorks Studio",
+        "id": 21,
+        "description": "PhotoSnap is a versatile photography app that allows you to capture, edit, and enhance images with professional-grade tools. Apply filters, adjust lighting, and remove unwanted objects effortlessly. With batch editing, collage creation, and direct social media sharing, PhotoSnap is perfect for casual photographers and enthusiasts alike. Its intuitive interface ensures that complex edits are simple and fun. Explore creative presets, customize effects, and bring your vision to life in minutes. Whether documenting memories or crafting artistic shots, PhotoSnap provides everything you need to make every photo extraordinary and shareable instantly.",
+        "size": 65,
+        "reviews": 78,
+        "ratingAvg": 5,
+        "downloads": 40,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 2
+            },
+            {
+                "name": "2 star",
+                "count": 4
+            },
+            {
+                "name": "3 star",
+                "count": 7
+            },
+            {
+                "name": "4 star",
+                "count": 23
+            },
+            {
+                "name": "5 star",
+                "count": 42
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "NoteSync",
+        "companyName": "CloudBridge Inc.",
+        "id": 22,
+        "description": "NoteSync keeps your notes organized and synchronized across all your devices. Capture text, voice, and images quickly, and tag or categorize them for easy retrieval. Collaborate with colleagues in real-time and share notes securely with encryption. Offline access ensures productivity even without internet connectivity. With smart reminders and search functionality, you’ll never lose track of important ideas. NoteSync’s simple, clean interface makes managing notes intuitive and efficient. Perfect for students, professionals, and creatives, NoteSync ensures that your thoughts, ideas, and plans are always accessible, safe, and organized.",
+        "size": 47,
+        "reviews": 60,
+        "ratingAvg": 4,
+        "downloads": 29,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 3
+            },
+            {
+                "name": "2 star",
+                "count": 5
+            },
+            {
+                "name": "3 star",
+                "count": 9
+            },
+            {
+                "name": "4 star",
+                "count": 21
+            },
+            {
+                "name": "5 star",
+                "count": 22
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "FitJourney",
+        "companyName": "HealthTrackers Ltd.",
+        "id": 23,
+        "description": "FitJourney is your personal health and fitness companion. Track workouts, monitor nutrition, and log progress effortlessly. Receive customized workout plans and daily tips tailored to your goals. FitJourney syncs with wearable devices to provide accurate insights and visual analytics. Join challenges, earn achievements, and stay motivated through social features. Whether you’re starting your fitness journey or improving your performance, FitJourney keeps you engaged, informed, and empowered. The app’s intuitive interface, smart notifications, and detailed progress tracking help you reach your health goals effectively while maintaining a balanced lifestyle.",
+        "size": 55,
+        "reviews": 82,
+        "ratingAvg": 5,
+        "downloads": 45,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 2
+            },
+            {
+                "name": "2 star",
+                "count": 4
+            },
+            {
+                "name": "3 star",
+                "count": 6
+            },
+            {
+                "name": "4 star",
+                "count": 28
+            },
+            {
+                "name": "5 star",
+                "count": 42
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "MindMapper",
+        "companyName": "BrainWave Solutions",
+        "id": 24,
+        "description": "MindMapper lets you visually organize ideas, projects, and plans with intuitive mind maps. Create nodes, link concepts, and collaborate with others seamlessly. Track progress, annotate tasks, and export maps for presentations or reports. MindMapper is perfect for brainstorming sessions, study planning, and project management. Its flexible interface adapts to complex workflows and simplifies planning. Whether for students, professionals, or creative thinkers, MindMapper helps capture thoughts clearly, prioritize tasks efficiently, and communicate ideas effectively. Enhance productivity, spark creativity, and bring clarity to your mind with this dynamic visualization tool.",
+        "size": 49,
+        "reviews": 70,
+        "ratingAvg": 4,
+        "downloads": 32,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 3
+            },
+            {
+                "name": "2 star",
+                "count": 5
+            },
+            {
+                "name": "3 star",
+                "count": 7
+            },
+            {
+                "name": "4 star",
+                "count": 24
+            },
+            {
+                "name": "5 star",
+                "count": 31
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "QuickScan",
+        "companyName": "ScanTech Solutions",
+        "id": 25,
+        "description": "QuickScan turns your device into a powerful scanner for documents, receipts, and photos. Capture high-resolution scans instantly and organize them with folders, tags, and cloud sync. Convert files to PDF or image formats and share easily via email or messaging apps. QuickScan includes OCR capabilities to extract text from images, making documents searchable and editable. Its intuitive design ensures scanning is fast and reliable. Ideal for students, professionals, and businesses, QuickScan simplifies document management, saves time, and keeps all your important files organized and accessible wherever you go.",
+        "size": 41,
+        "reviews": 65,
+        "ratingAvg": 5,
+        "downloads": 30,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 2
+            },
+            {
+                "name": "2 star",
+                "count": 4
+            },
+            {
+                "name": "3 star",
+                "count": 8
+            },
+            {
+                "name": "4 star",
+                "count": 20
+            },
+            {
+                "name": "5 star",
+                "count": 31
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "TravelMate",
+        "companyName": "Wanderlust Tech",
+        "id": 26,
+        "description": "TravelMate simplifies trip planning with itinerary suggestions, booking management, and offline maps. Discover popular destinations, track expenses, and receive alerts for flights and accommodations. Share plans with friends, collaborate on trips, and explore curated recommendations based on your interests. TravelMate keeps travel organized, fun, and stress-free, whether for business or leisure.",
+        "size": 63,
+        "reviews": 80,
+        "ratingAvg": 5,
+        "downloads": 42,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 2
+            },
+            {
+                "name": "2 star",
+                "count": 3
+            },
+            {
+                "name": "3 star",
+                "count": 7
+            },
+            {
+                "name": "4 star",
+                "count": 24
+            },
+            {
+                "name": "5 star",
+                "count": 44
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "StudyBuddy",
+        "companyName": "EduSmart Co.",
+        "id": 27,
+        "description": "StudyBuddy is an interactive learning platform offering quizzes, flashcards, and video lessons. Track your progress, set reminders, and study efficiently at your own pace. Collaborate with peers, share resources, and discover new subjects. StudyBuddy adapts to your learning style, helping students stay motivated, organized, and confident in mastering new topics effectively.",
+        "size": 52,
+        "reviews": 72,
+        "ratingAvg": 4,
+        "downloads": 38,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 3
+            },
+            {
+                "name": "2 star",
+                "count": 5
+            },
+            {
+                "name": "3 star",
+                "count": 8
+            },
+            {
+                "name": "4 star",
+                "count": 22
+            },
+            {
+                "name": "5 star",
+                "count": 34
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "QuickNotes",
+        "companyName": "NoteFlow Inc.",
+        "id": 28,
+        "description": "QuickNotes makes note-taking fast, organized, and accessible. Capture text, images, and voice memos, tag notes for easy search, and sync across devices. Offline access and secure storage ensure reliability. Perfect for students, professionals, and creatives, QuickNotes keeps your ideas and information available whenever needed, simplifying productivity and organization.",
+        "size": 44,
+        "reviews": 60,
+        "ratingAvg": 4,
+        "downloads": 28,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 2
+            },
+            {
+                "name": "2 star",
+                "count": 4
+            },
+            {
+                "name": "3 star",
+                "count": 7
+            },
+            {
+                "name": "4 star",
+                "count": 20
+            },
+            {
+                "name": "5 star",
+                "count": 27
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "FitTrack Pro",
+        "companyName": "ZenMotion Health",
+        "id": 29,
+        "description": "FitTrack Pro monitors workouts, sleep, nutrition, and hydration, offering personalized recommendations for a healthier lifestyle. Sync with wearable devices, track progress with charts, and set fitness goals. Challenges, achievements, and social sharing motivate you to stay consistent. FitTrack Pro adapts to all fitness levels and provides a comprehensive view of your health to maximize results.",
+        "size": 57,
+        "reviews": 85,
+        "ratingAvg": 5,
+        "downloads": 47,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 2
+            },
+            {
+                "name": "2 star",
+                "count": 3
+            },
+            {
+                "name": "3 star",
+                "count": 6
+            },
+            {
+                "name": "4 star",
+                "count": 28
+            },
+            {
+                "name": "5 star",
+                "count": 46
+            }
+        ]
+    },
+    {
+        "image": "",
+        "title": "SecureVault",
+        "companyName": "CipherLock Technologies",
+        "id": 30,
+        "description": "SecureVault offers secure storage for passwords, sensitive documents, and personal data. With encryption, biometric authentication, and cloud sync, your data remains private and protected. Organize, generate strong passwords, and auto-fill credentials safely. SecureVault ensures peace of mind, efficiency, and convenience for individuals and teams seeking top-level security for all digital assets.",
+        "size": 40,
+        "reviews": 68,
+        "ratingAvg": 5,
+        "downloads": 31,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 2
+            },
+            {
+                "name": "2 star",
+                "count": 3
+            },
+            {
+                "name": "3 star",
+                "count": 7
+            },
+            {
+                "name": "4 star",
+                "count": 20
+            },
+            {
+                "name": "5 star",
+                "count": 36
+            }
+        ]
+    }
+]
