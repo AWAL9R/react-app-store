@@ -4,6 +4,7 @@ import AppCard, { AppCardInline } from '../apps/AppCard';
 import { Link } from 'react-router';
 import { Loader } from '../Main';
 import { toast } from 'react-toastify';
+import { AppName } from '../../settings';
 
 
 const dataPromise = fetch("data.json").then(res => res.json());
@@ -23,6 +24,10 @@ const Installs = () => {
             setSortby(0)
         }
     };
+
+    useEffect(() => {
+        document.title = AppName + " | Install apps";
+      }, []);
 
     return (
         <div className=' bg-[#E9E9E9]'>

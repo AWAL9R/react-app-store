@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router';
+import { AppName } from '../settings';
 
 const Error404 = ({img="/assets/error-404.png", title='Oops, page not found!', subtitle='The page you are looking for is not available.' }) => {
+    useEffect(() => {
+                document.title = AppName + " - "+title;
+              }, [title]);
     return (
         <div className='bg-[#E9E9E9] flex flex-col justify-center items-center py-20 px-3 gap-7'>
             <img src={img} className='w-4/10 aspect-auto max-[800px]:w-6/10'/>

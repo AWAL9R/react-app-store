@@ -1,4 +1,4 @@
-import React, { Suspense, use } from 'react';
+import React, { Suspense, use, useEffect } from 'react';
 import { useParams } from 'react-router';
 import Error404 from '../Error404';
 import { FaDownload, FaStar } from 'react-icons/fa';
@@ -7,6 +7,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, CartesianGrid, Responsive
 import { install, installApp } from '../installs/install_utils';
 import { ToastContainer, toast } from 'react-toastify';
 import { Loader2 } from '../Main';
+import { AppName } from '../../settings';
 
 
 
@@ -31,6 +32,13 @@ const AppDetailsView = ({ appId, dataPromise }) => {
     const appIdInt = parseInt(appId) || -1;
 
     let app = appsData.find((item) => item.id === appIdInt)
+    let title='';
+
+     useEffect(() => {
+        let xtitle=title;
+        if(!title)xtitle="App not found";
+       document.title = AppName + " | " +xtitle;
+     }, [title]);
 
     if (app == null) {
         return (
@@ -38,11 +46,14 @@ const AppDetailsView = ({ appId, dataPromise }) => {
         )
     }
 
+  
 
-
-    const { image, id, title, description, downloads, ratingAvg, companyName, reviews, size } = app;
+    const { image, id, description, downloads, ratingAvg, companyName, reviews, size } = app;
+    title=app.title;
     const isInstalled = installApp(id, false, true)
     // console.log(isInstalled)
+
+    
 
     let ratings = app.ratings.toReversed();
     // ratings.reverse();
