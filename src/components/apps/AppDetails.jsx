@@ -75,7 +75,7 @@ const AppDetailsView = ({ appId, dataPromise }) => {
                                 <div className='text-4xl font-extrabold  max-[800px]:text-3xl max-[600px]:text-2xl'>{reviews}</div>
                             </div>
                         </div>
-                        <div><button onClick={(e) => { const tid = toast.loading("Installing..."); install(e, id, () => { toast.update(tid, { render: "Installed...", type: "success", isLoading: false, autoClose: 700 }); }) }} className={"bg-[#00D390] text-white py-3 px-6 hover:bg-[#01553a] transition ease-in-out rounded-md " + (isInstalled ? "bg-gray-400 hover:bg-gray-400" : "")}>{isInstalled ? "Installed" : `Install Now (${size}MB)`}</button></div>
+                        <div><button onClick={(e) => { if(e.target.innerText.includes("Install Now")==false){ return; } const tid = toast.loading("Installing..."); install(e, id, () => { toast.update(tid, { render: "Installed...", type: "success", isLoading: false, autoClose: 700 }); }) }} className={"bg-[#00D390] text-white py-3 px-6 hover:bg-[#01553a] transition ease-in-out rounded-md " + (isInstalled ? "bg-gray-400 hover:bg-gray-400" : "")}>{isInstalled ? "Installed" : `Install Now (${size}MB)`}</button></div>
                     </div>
                 </div>
                 <div>
