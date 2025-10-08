@@ -5,7 +5,7 @@ import HomeApps from '../home/HomeApps';
 import { Loader } from '../Main';
 
 
-const dataPromise = fetch("data.json").then(res => res.json());
+const dataPromise = fetch("/data.json").then(res => res.json());
 
 const Apps = () => {
     return (

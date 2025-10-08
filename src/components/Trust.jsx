@@ -6,21 +6,21 @@ const Trust = () => {
             <div className='text-5xl max-[800px]:text-4xl max-[600px]:text-2xl'>Trusted by Millions, Built for You</div>
             <div className='flex justify-around my-10 w-3/5 max-[900px]:w-4/5 max-[800px]:w-7/9 max-[700px]:w-8/9 max-[600px]:w-11/12 max-[800px]:my-7 max-[600px]:my-5'>
                 <div className='text-center'>
-                    <div className='font-thin'>Total Downloads</div>
+                    <div className='font-thin max-[600px]:text-[14px]'>Total Downloads</div>
                     <div className='text-6xl font-bold max-[800px]:text-4xl max-[600px]:text-2xl'>29.6M</div>
-                    <div className='font-thin'>21% more than last month</div>
+                    <div className='font-thin max-[600px]:text-[14px]'>21% more than last month</div>
                 </div>
 
                  <div className='text-center'>
-                    <div className='font-thin'>Total Reviews</div>
+                    <div className='font-thin max-[600px]:text-[14px]'>Total Reviews</div>
                     <div className='text-6xl font-bold max-[800px]:text-4xl max-[600px]:text-2xl'>906K</div>
-                    <div className='font-thin'>46% more than last month</div>
+                    <div className='font-thin max-[600px]:text-[14px]'>46% more than last month</div>
                 </div>
 
                  <div className='text-center'>
-                    <div className='font-thin'>Active Apps</div>
+                    <div className='font-thin max-[600px]:text-[14px]'>Active Apps</div>
                     <div className='text-6xl font-bold max-[800px]:text-4xl max-[600px]:text-2xl'>132+</div>
-                    <div className='font-thin'>31 more will Launch</div>
+                    <div className='font-thin max-[600px]:text-[14px]'>31 more will Launch</div>
                 </div>
                 
             </div>

@@ -6,6 +6,7 @@ import { MdReviews } from 'react-icons/md';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, CartesianGrid, ResponsiveContainer } from 'recharts';
 import { install, installApp } from '../installs/install_utils';
 import { ToastContainer, toast } from 'react-toastify';
+import { Loader2 } from '../Main';
 
 
 
@@ -16,8 +17,8 @@ const AppDetails = () => {
     const { appId } = useParams();
 
     return (
-        <div>
-            <Suspense fallback={<p>Loading.....</p>}>
+        <div  className='bg-[#E9E9E9]'>
+            <Suspense fallback={<div className='py-50'><Loader2/></div>}>
                 <AppDetailsView appId={appId} dataPromise={dataPromise}></AppDetailsView>
             </Suspense>
         </div>
@@ -49,7 +50,7 @@ const AppDetailsView = ({ appId, dataPromise }) => {
 
 
     return (
-        <div className='bg-[#E9E9E9]'>
+        <div>
             <div className='container py-15'>
                 <div className='flex gap-5 max-[700px]:flex-wrap'>
                     <div><img className='w-[300px] aspect-square' src={image ? image : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/2048px-No_image_available.svg.png"} /></div>

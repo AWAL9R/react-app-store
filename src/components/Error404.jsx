@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 const Error404 = ({img="/assets/error-404.png", title='Oops, page not found!', subtitle='The page you are looking for is not available.' }) => {
     return (
-        <div className='flex flex-col justify-center items-center my-20 gap-7'>
+        <div className='bg-[#E9E9E9] flex flex-col justify-center items-center py-20 px-3 gap-7'>
             <img src={img} className='w-4/10 aspect-auto max-[800px]:w-6/10'/>
             <div className='text-5xl font-bold max-[800px]:text-4xl max-[600px]:text-3xl'>{title}</div>
             <div className='text-gray-600'>{subtitle}</div>

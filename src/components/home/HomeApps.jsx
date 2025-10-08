@@ -1,4 +1,4 @@
-import React, { use, useState } from 'react';
+import React, { use, useRef, useState } from 'react';
 import AppCard from '../apps/AppCard';
 import { Link } from 'react-router';
 import { FaSearch } from 'react-icons/fa';
@@ -7,6 +7,7 @@ import { Loader, Loader2 } from '../Main';
 const HomeApps = ({ isHome, dataPromise }) => {
     const [search, setSearch] = useState("");
     const [loading, setLoading]=useState(false);
+    const searchRef=useRef(null);
 
     let searchL = search.toLowerCase();
     let apps = use(dataPromise);
@@ -26,11 +27,12 @@ const HomeApps = ({ isHome, dataPromise }) => {
             {isHome ||
                 <div className='flex justify-between items-center w-full container p-2'>
                     <div className='text-2xl font-semibold max-[800px]:text-[20px] max-[600px]:text-[18px]'>({shownApps.length}) {search?"Search result":"Total Apps Found"}</div>
-                    <label htmlFor='search' className='flex items-center gap-2 border border-gray-800 p-2 focus-within:outline-2 max-[600px]:w-2/5'><FaSearch className='text-gray-500'/> <input type="search" id='search' className='border-0 hover:border-0 focus:border-0 outline-none text-[20px] max-[800px]:text-[18px] max-[600px]:text-[16px] ' autoComplete="off" placeholder='Search apps' onChange={(e) => { setLoading(true); setTimeout(function(){ setLoading(false); setSearch(e.target.value)}, 500); }} /></label>
+                    <label htmlFor='search' className='flex items-center gap-2 border border-gray-800 p-2 focus-within:outline-2 max-[600px]:w-2/5'><FaSearch className='text-gray-500'/> <input ref={searchRef} type="search" id='search' className='w-full border-0 hover:border-0 focus:border-0 outline-none text-[20px] max-[800px]:text-[18px] max-[600px]:text-[16px] ' autoComplete="off" placeholder='Search apps' onChange={(e) => { setLoading(true); setTimeout(function(){ setLoading(false); setSearch(e.target.value)}, 500); }} /></label>
                 </div>
             }
 
             {loading && <Loader2/> }
+            {shownApps.length == 0 && <h1 className='text-3xl mt-10'>No apps found. <span className='font-bold text-blue-500 hover:text-blue-700 underline cursor-pointer' onClick={()=>{ searchRef.current.value=''; setSearch("");  }}>Browse apps</span></h1>}
 
             <div className="container grid grid-cols-4 gap-4 max-[800px]:grid-cols-3 max-[650px]:grid-cols-2">
                 {loading || shownApps.map((item,) => {
