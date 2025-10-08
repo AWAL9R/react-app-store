@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     children:[
       {
         index: true,
-        Component: Home,
+        element: <Home/>
       },
       {
         path:"/apps",
@@ -29,15 +29,15 @@ const router = createBrowserRouter([
       },
       {
         path:"/apps/:appId",
-        Component: AppDetails
+        element: <AppDetails/>
       },
       {
         path:"/installed",
-        Component: Installs
+        Component: Installs,
       },
       {
         path:"*",
-        Component: Error404
+        element: <Error404/>
       }
     ]
   },

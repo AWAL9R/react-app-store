@@ -1,6 +1,8 @@
 import React, { Suspense, use, useEffect, useState } from 'react';
 import { installApp, uninstall } from './install_utils';
 import AppCard, { AppCardInline } from '../apps/AppCard';
+import { Link } from 'react-router';
+import { Loader } from '../Main';
 
 
 const dataPromise = fetch("data.json").then(res => res.json());
@@ -10,10 +12,10 @@ const Installs = () => {
     const [totalInstalled, setTotalInstalled] = useState(0)
     const [sortby, setSortby] = useState(0)
     const handleSortBy = (event) => {
-        if (event.target.value == 'size') {
+        if (event.target.value == 'low') {
             setSortby(1);
         }
-        else if (event.target.value == 'downloads') {
+        else if (event.target.value == 'high') {
             setSortby(2);
         }
         else{
@@ -23,23 +25,23 @@ const Installs = () => {
 
     return (
         <div className=' bg-[#D2D2D2]'>
-            <div className="container text-center py-20">
+            <div className="container text-center py-20 max-[1000px]:py-15 max-[800px]:py-13 max-[600px]:py-6">
                 <div>
-                    <div className='text-5xl font-bold my-5'>Your Installed Apps</div>
-                    <div className='text-gray-600 text-[20px]'>Explore All Trending Apps on the Market developed by us</div>
+                    <div className='text-5xl font-bold my-5 max-[800px]:text-4xl max-[600px]:text-3xl'>Your Installed Apps</div>
+                    <div className='text-gray-600 text-[20px] max-[600px]:text-[18px]'>Explore All Trending Apps on the Market developed by us</div>
                 </div>
-                <div className='flex justify-between items-center'>
+                <div className='flex justify-between items-center mt-7'>
                     <div className='text-2xl font-semibold'>{totalInstalled} Apps found</div>
                     <div>
                         <select onChange={(event) => { handleSortBy(event); }} className='border border-gray-400 p-3 focus:outline-none'>
-                            <option value="">Sort by Default</option>
-                            <option value="size">Sort by Size</option>
-                            <option value="downloads">Sort by Downloads</option>
+                            <option value="" selected="true" disabled="disabled">Sort by Downloads</option>
+                            <option value="low">Sort Low-High</option>
+                            <option value="high">Sort High-Low</option>
                         </select>
                     </div>
                 </div>
                 <div>
-                    <Suspense fallback={<p>loading...</p>}>
+                    <Suspense fallback={<div className='my-500'><Loader/></div>}>
                         <InstalledApp dataPromise={dataPromise} setTotalInstalled={setTotalInstalled} sortby={sortby}></InstalledApp>
                     </Suspense>
                 </div>
@@ -60,9 +62,9 @@ const InstalledApp = ({ dataPromise, setTotalInstalled, sortby }) => {
     if (sortby != 0) {
         apps = apps.sort((a, b) => {
             if (sortby == 1) {
-                return a.size - b.size;
+                 return a.downloads - b.downloads;
             }
-            return a.downloads - b.downloads;
+            return b.downloads - a.downloads;
         })
     }
 
@@ -73,9 +75,11 @@ const InstalledApp = ({ dataPromise, setTotalInstalled, sortby }) => {
 
     return (
         <div>
+            {apps.length==0 && <h1 className='text-3xl mt-10'>No apps found. <Link className='font-bold text-blue-500 hover:text-blue-700 underline' to="/apps">Browse apps</Link></h1>}
             {
                 apps.map(app => <AppCardInline key={app.id} app={app} isInstalled={true} removeInstalled={removeInstalled}></AppCardInline>)
             }
+            
         </div>
     )
 };
