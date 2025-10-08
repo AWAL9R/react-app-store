@@ -7,7 +7,7 @@ import { RiMenuAddFill } from 'react-icons/ri';
 const NavBar = () => {
     const [menu, setMenu] = useState(false);
     const handleMenu = () => {
-        console.log(menu)
+        // console.log(menu)
         setMenu(!menu)
     };
 

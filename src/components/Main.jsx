@@ -16,20 +16,30 @@ export function ScrollToTop() {
     return null;
 }
 
-export const Loader = ()=>{
+export const Loader = () => {
     return (
         <div className="nav-loading-overlay text-3xl text-white" aria-hidden="true">
             <div className="nav-spinner" />
-             Loading Please wait...
+            Loading Please wait...
         </div>
     )
 }
+
+export const Loader2 = () => {
+    return (
+        <div className="nav-loading text-3xl text-gray-500 mb-100" aria-hidden="true">
+            <div className="nav-spinner" />
+            Loading Please wait...
+        </div>
+    )
+}
+
 export function NavigationLoading() {
     const nav = useNavigation();
     const loading = nav.state !== "idle"; // "loading" | "submitting" | "idle"
     if (!loading) return null;
     return (
-        <Loader/>
+        <Loader />
     );
 }
 

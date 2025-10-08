@@ -5,6 +5,9 @@ import { FaDownload, FaStar } from 'react-icons/fa';
 import { MdReviews } from 'react-icons/md';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, CartesianGrid, ResponsiveContainer } from 'recharts';
 import { install, installApp } from '../installs/install_utils';
+import { ToastContainer, toast } from 'react-toastify';
+
+
 
 const dataPromise = fetch("/data.json").then(res => res.json());
 
@@ -34,10 +37,10 @@ const AppDetailsView = ({ appId, dataPromise }) => {
         )
     }
 
-   
+
 
     const { image, id, title, description, downloads, ratingAvg, companyName, reviews, size } = app;
-    const isInstalled=installApp(id, false, true)
+    const isInstalled = installApp(id, false, true)
     // console.log(isInstalled)
 
     let ratings = app.ratings.toReversed();
@@ -46,13 +49,14 @@ const AppDetailsView = ({ appId, dataPromise }) => {
 
 
     return (
-        <div className='bg-[#D2D2D2]'>
+        <div className='bg-[#E9E9E9]'>
             <div className='container py-15'>
                 <div className='flex gap-5 max-[700px]:flex-wrap'>
-                    <div><img className='w-[300px] aspect-square' src={image?image:"https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/2048px-No_image_available.svg.png"} /></div>
-                    <div className='w-full flex flex-col justify-between'>
+                    <div><img className='w-[300px] aspect-square' src={image ? image : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/2048px-No_image_available.svg.png"} /></div>
+                    <div className='w-full flex flex-col justify-between gap-3'>
                         <div className='text-4xl font-bold max-[800px]:text-3xl max-[600px]:text-2xl'>{title}</div>
-                        <div className='border-b-1 border-b-gray-400'>Developed by <a href='#developed' className='text-black font-semibold'>{companyName}</a></div>
+                        <div >Developed by <a href='#developed' className='text-black font-semibold'>{companyName}</a></div>
+                        <hr className='text-gray-500' />
                         <div className='flex gap-15  max-[800px]:gap-10 max-[600px]:gap-5'>
                             <div>
                                 <div className='text-4xl text-green-500  max-[800px]:text-3xl max-[600px]:text-2xl'><FaDownload /></div>
@@ -70,18 +74,18 @@ const AppDetailsView = ({ appId, dataPromise }) => {
                                 <div className='text-4xl font-extrabold  max-[800px]:text-3xl max-[600px]:text-2xl'>{reviews}</div>
                             </div>
                         </div>
-                        <div><button onClick={(e) => { install(e, id) }} className={"bg-[#00D390] text-white py-3 px-6 hover:bg-[#01553a] transition ease-in-out rounded-md "+(isInstalled?"bg-gray-400 hover:bg-gray-400":"")}>{isInstalled?"Installed" : `Install Now (${size}MB)`}</button></div>
+                        <div><button onClick={(e) => { const tid = toast.loading("Installing..."); install(e, id, () => { toast.update(tid, { render: "Installed...", type: "success", isLoading: false, autoClose: 700 }); }) }} className={"bg-[#00D390] text-white py-3 px-6 hover:bg-[#01553a] transition ease-in-out rounded-md " + (isInstalled ? "bg-gray-400 hover:bg-gray-400" : "")}>{isInstalled ? "Installed" : `Install Now (${size}MB)`}</button></div>
                     </div>
                 </div>
                 <div>
                     <div className='text-2xl font-bold'>Ratings</div>
-                    <div  className='h-[300px] max-[800px]:h-[250px]'>
+                    <div className='h-[300px] max-[800px]:h-[250px]'>
                         <ResponsiveContainer width="100%" height='100%'>
                             <BarChart layout="vertical" data={ratings} barCategoryGap="15%">
                                 <XAxis type='number' />
                                 <YAxis type='category' dataKey="name" stroke="#8884d8" />
-
-                                <Bar dataKey="count" fill="#FF8811" barSize={25} />
+                                <Tooltip />
+                                <Bar dataKey="count" fill="#FF8811" name="Reviews" barSize={25} />
                             </BarChart>
                         </ResponsiveContainer>
                     </div>

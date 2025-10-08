@@ -17,7 +17,17 @@ body{
   display:flex;
   align-items:center;
   justify-content:center;
+  gap: 1em;
   background:rgba(0,0,0,0.5);
+  z-index:9999;
+  pointer-events:none; /* let clicks through if you prefer */
+}
+.nav-loading{
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap: 1em;
   z-index:9999;
   pointer-events:none; /* let clicks through if you prefer */
 }

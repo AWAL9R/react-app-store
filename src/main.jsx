@@ -6,7 +6,7 @@ import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import Main from './components/Main';
 import AppDetails from './components/apps/AppDetails';
-
+import { ToastContainer } from 'react-toastify';
 
 
 const Home = lazy(() => import("./components/home/Home"));
@@ -17,27 +17,27 @@ const Error404 = lazy(() => import('./components/Error404'));
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main/>,
-    children:[
+    element: <Main />,
+    children: [
       {
         index: true,
-        element: <Home/>
+        element: <Home />
       },
       {
-        path:"/apps",
-        element: <Apps/>
+        path: "/apps",
+        element: <Apps />
       },
       {
-        path:"/apps/:appId",
-        element: <AppDetails/>
+        path: "/apps/:appId",
+        element: <AppDetails />
       },
       {
-        path:"/installed",
+        path: "/installed",
         Component: Installs,
       },
       {
-        path:"*",
-        element: <Error404/>
+        path: "*",
+        element: <Error404 />
       }
     ]
   },
@@ -45,6 +45,7 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-     <RouterProvider router={router} />
+    <ToastContainer />
+    <RouterProvider router={router} />
   </StrictMode>,
 )

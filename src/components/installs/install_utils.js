@@ -24,22 +24,26 @@ export function installApp(id, shouldUninstall = false, query_isInstalled = fals
         localStorage.setItem("installed", JSON.stringify(installed));
     }
 
-    return installed;
+    return installed.map(item=>parseInt(item));
 }
 
 
-export function install(event, id) {
+export function install(event, id, callback) {
     if(event.target.innerHTML === "Installed"){
         return;
     }
     event.target.innerHTML = "Installing....";
     event.target.classList.add("bg-blue-700")
     event.target.classList.add("hover:bg-blue-900")
+    
     setTimeout(() => {
         event.target.innerHTML = "Installed";
         event.target.classList.add("bg-gray-400")
         event.target.classList.add("hover:bg-gray-400")
         installApp(id);
+        if(callback){
+            callback();
+        }
     }, 2000)
 }
 
