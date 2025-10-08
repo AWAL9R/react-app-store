@@ -5,6 +5,7 @@ import './index.css'
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import Main from './components/Main';
+import AppDetails from './components/apps/AppDetails';
 
 
 
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/apps/:appId",
-        Component: Apps
+        Component: AppDetails
       },
       {
         path:"/installed",

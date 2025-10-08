@@ -35,10 +35,10 @@ const Footer = () => {
                     <nav className=' max-w-[220px] flex flex-col justify-between gap-2 text-nowrap'>
                         <h1 className='text-2xl  font-medium'>Social Links</h1>
 
-                        <a className='hover:underline' href="#"><img src='./twitter.png' className='inline' /> @{AppName}</a>
-                        <a className='hover:underline' href="#"><img src='./linkedin.png' className='inline' /> @{AppName}</a>
-                        <a className='hover:underline' href="#"><img src='./facebook.png' className='inline' /> @{AppName}</a>
-                        <a className='hover:underline' href="mailto:support@appsspace.com"><img src='./email.png' className='inline' /> support@appsspace.com</a>
+                        <a className='hover:underline' href="#"><img src='/twitter.png' className='inline' /> @{AppName}</a>
+                        <a className='hover:underline' href="#"><img src='/linkedin.png' className='inline' /> @{AppName}</a>
+                        <a className='hover:underline' href="#"><img src='/facebook.png' className='inline' /> @{AppName}</a>
+                        <a className='hover:underline' href="mailto:support@appsspace.com"><img src='/email.png' className='inline' /> support@appsspace.com</a>
                     </nav>
 
                 </div>

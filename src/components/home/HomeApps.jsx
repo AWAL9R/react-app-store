@@ -22,7 +22,7 @@ const HomeApps = ({ isHome, dataPromise }) => {
 
             {isHome ||
                 <div className='flex justify-between items-center w-full container p-2'>
-                    <div className='text-2xl font-semibold'>({shownApps.length}) Apps Found</div>
+                    <div className='text-2xl font-semibold'>({shownApps.length}) {search?"Search result":"Total Apps Found"}</div>
                     <label htmlFor='search' className='flex items-center gap-2 border border-gray-800 p-2 focus-within:outline-2'><FaSearch className='text-gray-500'/> <input type="search" id='search' className='border-0 hover:border-0 focus:border-0 outline-none text-[20px]' autoComplete="off" placeholder='Search apps' onChange={(e) => { setSearch(e.target.value) }} /></label>
                 </div>
             }
@@ -33,7 +33,7 @@ const HomeApps = ({ isHome, dataPromise }) => {
         return <AppCard key={item.id} app={item} />
     })}
             </div>
-            {isHome && <div><Link to="/apps"><button className='bg-linear-to-br from-[#632EE3] to-[#9F62F2]  hover:from-[#5217db] hover:to-[#7d36e0] flex gap-1 items-center rounded-md py-3 px-8 text-white font-bold text-[20px]'>Explore More</button></Link></div>}
+            {isHome && <div><Link to="/apps"><button className='bg-linear-to-br from-[#632EE3] to-[#9F62F2] hover:from-[#5217db] hover:to-[#7d36e0] hover:scale-105 transition ease-in-out flex gap-1 items-center rounded-md py-3 px-8 text-white font-bold text-[20px]'>Explore More</button></Link></div>}
         </div>
     );
 };
