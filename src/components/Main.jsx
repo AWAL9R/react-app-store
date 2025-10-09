@@ -46,6 +46,7 @@ export function NavigationLoading() {
 const Main = () => {
     return (
         <>
+            <NavigationLoading />
             <ScrollToTop />
             <NavBar />
             <Outlet />

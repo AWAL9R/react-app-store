@@ -38,7 +38,7 @@ const Footer = () => {
                         <a className='hover:underline' href="#"><img src='/twitter.png' className='inline' /> @{AppName}</a>
                         <a className='hover:underline' href="#"><img src='/linkedin.png' className='inline' /> @{AppName}</a>
                         <a className='hover:underline' href="#"><img src='/facebook.png' className='inline' /> @{AppName}</a>
-                        <a className='hover:underline' href="mailto:support@appsspace.com"><img src='/email.png' className='inline' /> support@appsspace.com</a>
+                        <a className='hover:underline' href="mailto:support@appsspace.com"><img src='/email.png' className='inline' /> support@appsspace.io</a>
                     </nav>
 
                 </div>
