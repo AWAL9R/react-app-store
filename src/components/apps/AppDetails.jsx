@@ -91,11 +91,11 @@ const AppDetailsView = ({ appId, dataPromise }) => {
                         </div>
                         <div className='flex gap-4  flex-wrap'>
                             <button
-                                onClick={(e) => { if (e.target.innerText.includes("Install Now") == false) { return; } const tid = toast.loading("Installing..."); install(e, id, () => { setInstalled(true); toast.update(tid, { render: "Installed...", type: "success", isLoading: false, autoClose: 700 }); }) }}
+                                onClick={(e) => { if (e.target.innerText.includes("Install Now") == false) { return; } const tid = toast.loading(title + " is Installing..."); install(e, id, () => { setInstalled(true); toast.update(tid, { render: title + " is Installed...", type: "success", isLoading: false, autoClose: 700 }); }) }}
                                 className={"bg-[#00D390] text-white py-3 px-6 hover:bg-[#01553a] transition ease-in-out rounded-md shadow-md " + (isInstalled ? "bg-gray-400 hover:bg-gray-400" : "")}>{isInstalled ? "Installed" : `Install Now (${size}MB)`}</button>
 
                             {isInstalled && <button
-                                onClick={(e) => { const tid = toast.loading("Uninstalling..."); uninstall(e, id, () => { setInstalled(false); toast.update(tid, { render: "Uninstalled...", type: "success", isLoading: false, autoClose: 700 }); }) }}
+                                onClick={(e) => { const tid = toast.loading(title + " is Uninstalling..."); uninstall(e, id, () => { setInstalled(false); toast.update(tid, { render: title + " is Uninstalled...", type: "success", isLoading: false, autoClose: 700 }); }) }}
                                 className={"bg-[#00D390] text-white py-3 px-6 hover:bg-[#01553a] transition ease-in-out rounded-md shadow-md " + (isInstalled ? "" : "hidden")}>Uninstall</button>}
                         </div>
                     </div>
@@ -103,9 +103,9 @@ const AppDetailsView = ({ appId, dataPromise }) => {
                 <div className='bg-white rounded-md shadow-md m-2 p-3'>
                     <div className='text-2xl font-bold'>Ratings</div>
                     <div className='h-[300px] max-[800px]:h-[250px]'>
-                        <ResponsiveContainer width="100%" height='100%'>
-                            <BarChart layout="vertical" data={ratings} barCategoryGap="15%">
-                                <XAxis type='number' />
+                        <ResponsiveContainer width="100%" height='100%'  >
+                            <BarChart layout="vertical" data={ratings} barCategoryGap="15%" margin={{ top: 20, right: 20, left: 20, bottom: 40 }}>
+                                <XAxis type='number' label={{ value: 'Ratings', position: 'insideBottom', offset: -10, fill: '#0000ff' }}  />
                                 <YAxis type='category' dataKey="name" stroke="#8884d8" />
                                 <Tooltip />
                                 <Bar dataKey="count" fill="#FF8811" name="Reviews" barSize={25} />

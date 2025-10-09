@@ -61,8 +61,8 @@ const InstalledApp = ({ dataPromise, setTotalInstalled, sortby }) => {
     let apps = use(dataPromise);
     let installedApps = installApp(null);
     const [installed, setInstalled] = useState(installedApps);
-    const removeInstalled = (event, id) => {
-        const tid = toast.loading("Uninstalling...");
+    const removeInstalled = (event, id, title) => {
+        const tid = toast.loading(title + " is Uninstalling...");
         uninstall(event, id, () => { setInstalled([...installed.filter(item => item != id)]); setTotalInstalled(installed.length); toast.update(tid, { render: "Uninstalled...", type: "success", isLoading: false, autoClose: 700 }); })
     }
     apps = apps.filter(app => installed.includes(app.id))
