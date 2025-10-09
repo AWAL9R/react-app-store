@@ -6,7 +6,7 @@ import { MdReviews } from 'react-icons/md';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, CartesianGrid, ResponsiveContainer } from 'recharts';
 import { install, installApp, uninstall } from '../installs/install_utils';
 import { ToastContainer, toast } from 'react-toastify';
-import { Loader2 } from '../Main';
+import { Loader } from '../Main';
 import { AppName } from '../../settings';
 
 
@@ -20,7 +20,7 @@ const AppDetails = () => {
 
     return (
         <div className='bg-[#E9E9E9]'>
-            <Suspense fallback={<div className='py-50'><Loader2 /></div>}>
+            <Suspense fallback={<div className='py-50'><Loader /></div>}>
                 <AppDetailsView appId={appId} dataPromise={dataPromise}></AppDetailsView>
             </Suspense>
         </div>

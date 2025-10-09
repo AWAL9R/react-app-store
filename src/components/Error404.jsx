@@ -4,7 +4,7 @@ import { AppName } from '../settings';
 
 const Error404 = ({ img = "/assets/error-404.png", title = 'Oops, page not found!', subtitle = 'The page you are looking for is not available.' }) => {
     useEffect(() => {
-        document.title = AppName + " - " + title;
+        document.title = AppName + " | " + title;
     }, [title]);
     const navigate = useNavigate();
     return (

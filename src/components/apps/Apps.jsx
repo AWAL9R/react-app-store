@@ -6,9 +6,11 @@ import { Loader } from '../Main';
 import { AppName } from '../../settings';
 
 
-const dataPromise = fetch("/data.json").then(res => res.json());
+
 
 const Apps = () => {
+    const dataPromise=fetch("data.json").then(res=>res.json()); //to fire loading every time
+    
     useEffect(() => {
     document.title = AppName + " | All apps developed by us";
   }, []);
