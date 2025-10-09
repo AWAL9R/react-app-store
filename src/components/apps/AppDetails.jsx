@@ -1,25 +1,26 @@
-import React, { Suspense, use, useEffect } from 'react';
+import React, { Suspense, use, useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import Error404 from '../Error404';
 import { FaDownload, FaStar } from 'react-icons/fa';
 import { MdReviews } from 'react-icons/md';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, CartesianGrid, ResponsiveContainer } from 'recharts';
-import { install, installApp } from '../installs/install_utils';
+import { install, installApp, uninstall } from '../installs/install_utils';
 import { ToastContainer, toast } from 'react-toastify';
 import { Loader2 } from '../Main';
 import { AppName } from '../../settings';
 
 
 
-const dataPromise = fetch("/data.json").then(res => res.json());
+
 
 
 const AppDetails = () => {
     const { appId } = useParams();
+    const dataPromise = fetch("/data.json").then(res => res.json()); //added to block scope to fire loading
 
     return (
-        <div  className='bg-[#E9E9E9]'>
-            <Suspense fallback={<div className='py-50'><Loader2/></div>}>
+        <div className='bg-[#E9E9E9]'>
+            <Suspense fallback={<div className='py-50'><Loader2 /></div>}>
                 <AppDetailsView appId={appId} dataPromise={dataPromise}></AppDetailsView>
             </Suspense>
         </div>
@@ -28,17 +29,19 @@ const AppDetails = () => {
 
 const AppDetailsView = ({ appId, dataPromise }) => {
     let appsData = use(dataPromise);
-
     const appIdInt = parseInt(appId) || -1;
 
-    let app = appsData.find((item) => item.id === appIdInt)
-    let title='';
+    const _isInstalled = installApp(appIdInt, false, true)
+    const [isInstalled, setInstalled] = useState(_isInstalled);
 
-     useEffect(() => {
-        let xtitle=title;
-        if(!title)xtitle="App not found";
-       document.title = AppName + " | " +xtitle;
-     }, [title]);
+    let app = appsData.find((item) => item.id === appIdInt)
+    let title = '';
+
+    useEffect(() => {
+        let xtitle = title;
+        if (!title) xtitle = "App not found";
+        document.title = AppName + " | " + xtitle;
+    }, [title]);
 
     if (app == null) {
         return (
@@ -46,14 +49,14 @@ const AppDetailsView = ({ appId, dataPromise }) => {
         )
     }
 
-  
+
 
     const { image, id, description, downloads, ratingAvg, companyName, reviews, size } = app;
-    title=app.title;
-    const isInstalled = installApp(id, false, true)
+    title = app.title;
+
     // console.log(isInstalled)
 
-    
+
 
     let ratings = app.ratings.toReversed();
     // ratings.reverse();
@@ -86,7 +89,15 @@ const AppDetailsView = ({ appId, dataPromise }) => {
                                 <div className='text-4xl font-extrabold  max-[800px]:text-3xl max-[600px]:text-2xl'>{reviews}</div>
                             </div>
                         </div>
-                        <div><button onClick={(e) => { if(e.target.innerText.includes("Install Now")==false){ return; } const tid = toast.loading("Installing..."); install(e, id, () => { toast.update(tid, { render: "Installed...", type: "success", isLoading: false, autoClose: 700 }); }) }} className={"bg-[#00D390] text-white py-3 px-6 hover:bg-[#01553a] transition ease-in-out rounded-md " + (isInstalled ? "bg-gray-400 hover:bg-gray-400" : "")}>{isInstalled ? "Installed" : `Install Now (${size}MB)`}</button></div>
+                        <div className='flex gap-4'>
+                            <button
+                                onClick={(e) => { if (e.target.innerText.includes("Install Now") == false) { return; } const tid = toast.loading("Installing..."); install(e, id, () => { setInstalled(true); toast.update(tid, { render: "Installed...", type: "success", isLoading: false, autoClose: 700 }); }) }}
+                                className={"bg-[#00D390] text-white py-3 px-6 hover:bg-[#01553a] transition ease-in-out rounded-md " + (isInstalled ? "bg-gray-400 hover:bg-gray-400" : "")}>{isInstalled ? "Installed" : `Install Now (${size}MB)`}</button>
+
+                            {isInstalled && <button
+                                onClick={(e) => { const tid = toast.loading("Uninstalling..."); uninstall(e, id, () => { setInstalled(false); toast.update(tid, { render: "Uninstalled...", type: "success", isLoading: false, autoClose: 700 }); }) }}
+                                className={"bg-[#00D390] text-white py-3 px-6 hover:bg-[#01553a] transition ease-in-out rounded-md " + (isInstalled ? "" : "hidden")}>Uninstall</button>}
+                        </div>
                     </div>
                 </div>
                 <div>

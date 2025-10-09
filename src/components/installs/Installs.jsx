@@ -26,7 +26,7 @@ const Installs = () => {
     };
 
     useEffect(() => {
-        document.title = AppName + " | Install apps";
+        document.title = AppName + " | Installed apps";
       }, []);
 
     return (
@@ -37,9 +37,9 @@ const Installs = () => {
                     <div className='text-gray-600 text-[20px] max-[600px]:text-[18px]'>Explore All Trending Apps on the Market developed by us</div>
                 </div>
                 <div className='flex justify-between items-center mt-7'>
-                    <div className='text-2xl font-semibold'>{totalInstalled} Apps found</div>
-                    <div>
-                        <select defaultValue='' onChange={(event) => { handleSortBy(event); }} className='border border-gray-400 p-3 focus:outline-none'>
+                    <div className='text-2xl font-semibold max-[800px]:text-[20px] max-[600px]:text-[18px]'>{totalInstalled} Apps found</div>
+                    <div className=''>
+                        <select defaultValue='' onChange={(event) => { handleSortBy(event); }} className='border border-gray-400 p-3 focus:outline-none max-[400px]:text-[16px] max-[600px]:p-2'>
                             <option value="" disabled="disabled">Sort by Downloads</option>
                             <option value="low">Sort Low-High</option>
                             <option value="high">Sort High-Low</option>
