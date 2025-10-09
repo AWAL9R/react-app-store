@@ -1,6 +1,6 @@
 [
     {
-        "image": "https://image.winudf.com/v2/image1/Y29tLnRpY2t0aWNrLnRhc2tfaWNvbl8xNjYxMTY1MzY2XzA0Nw/icon.webp?w=320&fakeurl=1&type=.webp",
+        "image": "1.webp",
         "title": "TaskMaster Pro",
         "companyName": "NextWave Labs",
         "id": 1,
@@ -33,7 +33,7 @@
         ]
     },
     {
-        "image": "https://image.winudf.com/v2/image/Y29tLmltYWdpbnN0dWRpby5pbWFnZXRvb2xzLnBpeGVsbGFiX2ljb25fMTUzMjY0NDM3MF8wOTU/icon.webp?w=140&fakeurl=1&type=.webp",
+        "image": "2.webp",
         "title": "Pixel Rush",
         "companyName": "SkyForge Studios",
         "id": 2,
@@ -66,7 +66,7 @@
         ]
     },
     {
-        "image": "https://image.winudf.com/v2/image1/Y29tLnl5Z2cubm90ZS5hcHBfaWNvbl8xNzI3NTA5MTM1XzA1Mg/icon.webp?w=106&fakeurl=1&type=.webp",
+        "image": "3.webp",
         "title": "NoteEase",
         "companyName": "PaperByte Inc",
         "id": 3,
@@ -99,7 +99,7 @@
         ]
     },
     {
-        "image": "https://image.winudf.com/v2/image1/Y24ueGlhb2Zlbmdrai5maXRwcm9faWNvbl8xNTU1MzE3MjAzXzA4NQ/icon.webp?w=106&fakeurl=1&type=.webp",
+        "image": "4.webp",
         "title": "FitTrack",
         "companyName": "ZenMotion Health",
         "id": 4,
@@ -132,7 +132,7 @@
         ]
     },
     {
-        "image": "https://play-lh.googleusercontent.com/wph1pgfVhrvUHWcuunqEw_1BJlZUw9__FTCZ_5QfF9R6Mksj_WmBbPje5tc4rZslST9P=w240-h480-rw",
+        "image": "5.webp",
         "title": "PhotoVerse",
         "companyName": "SnapForge Labs",
         "id": 5,
@@ -165,7 +165,7 @@
         ]
     },
     {
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPywRhVZNvfOr_dvOTvbN9gXwsLIUrngRrVQ&s",
+        "image": "6.png",
         "title": "SoundFlow",
         "companyName": "EchoByte Media",
         "id": 6,
@@ -198,7 +198,7 @@
         ]
     },
     {
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxe-mh1zaHzinsNlCoTR3-CUtHzmGRNFKtrQ&s",
+        "image": "7.jpg",
         "title": "CodePilot",
         "companyName": "DevForge Systems",
         "id": 7,
@@ -231,7 +231,7 @@
         ]
     },
     {
-        "image": "https://static01.nyt.com/images/2014/12/11/technology/personaltech/11machin-illo/11machin-illo-articleLarge-v3.jpg?quality=75&auto=webp&disable=upscale",
+        "image": "8.webp",
         "title": "Weatherly",
         "companyName": "BlueSky Digital",
         "id": 8,
@@ -264,7 +264,7 @@
         ]
     },
     {
-        "image": "https://play-lh.googleusercontent.com/fcgit-cPA9Mo4uaBc1sLjOBWeAXKsSOzDD0ZNArhvNiAvfV-UKUo9dLDuGFUOM9D1wc",
+        "image": "9.png",
         "title": "Learnify",
         "companyName": "EduSmart Co.",
         "id": 9,
@@ -297,7 +297,7 @@
         ]
     },
     {
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCJpa_nWAxGVMDAtDGg1fmCxMwDPyIimyp9w&s",
+        "image": "10.png",
         "title": "SafeVault",
         "companyName": "CipherLock Technologies",
         "id": 10,
@@ -330,7 +330,7 @@
         ]
     },
     {
-        "image": "https://play-lh.googleusercontent.com/qo4rQGDCYkmKTavOQZHDdq8fuv7G7e8DTD96uVSW2IB8qYw9QT_eAkyigHkh_SKZDz2a=w240-h480-rw",
+        "image": "11.webp",
         "title": "MindSpace",
         "companyName": "CalmTech Labs",
         "id": 11,
@@ -363,7 +363,7 @@
         ]
     },
     {
-        "image": "https://play-lh.googleusercontent.com/UxIJEGNjCqIyT0G6juqFUyEv7PcIildbwJSkDzZ77IkoR-oYdDyqVjfAg6CJwUEletw=w240-h480-rw",
+        "image": "12.webp",
         "title": "ShopSmart",
         "companyName": "RetailEdge Global",
         "id": 12,
@@ -396,7 +396,7 @@
         ]
     },
     {
-        "image": "https://play-lh.googleusercontent.com/k7P7qxhX6ovCgtmXSubTxCHj7VRHNk6p_ZVxUVtRRzyANOdmr5bufbi5HRwWGJq6MQ1W=w240-h480-rw",
+        "image": "13.webp",
         "title": "TravelGo",
         "companyName": "SkyTrail Technologies",
         "id": 13,
@@ -429,7 +429,7 @@
         ]
     },
     {
-        "image": "https://img.utdstc.com/icon/f47/28f/f4728f1e6e8576a7d94a355fe27e80fd080163c84d7422dd0c0f2d184e95445c:200",
+        "image": "14.webp",
         "title": "GameHub",
         "companyName": "LunaByte Entertainment",
         "id": 14,
@@ -462,7 +462,7 @@
         ]
     },
     {
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBEFSrfmvpSIEwLUSvxox95JEVAZaVUxadJw&s",
+        "image": "15.png",
         "title": "DocuSignify",
         "companyName": "PaperChain Systems",
         "id": 15,
@@ -495,7 +495,7 @@
         ]
     },
     {
-        "image": "https://cdn-icons-png.flaticon.com/512/4973/4973352.png",
+        "image": "16.png",
         "title": "CryptoVault",
         "companyName": "BlockWave Technologies",
         "id": 16,
@@ -528,7 +528,7 @@
         ]
     },
     {
-        "image": "https://play-lh.googleusercontent.com/fql0gSipcRPe6WVgdhNVY1RuxZotbwqg_JVJhgoA7h_UFxorbG-XEK5Cr5ulYU-GQX8=w240-h480-rw",
+        "image": "17.webp",
         "title": "Artify",
         "companyName": "VisionCraft Studio",
         "id": 17,
@@ -561,7 +561,7 @@
         ]
     },
     {
-        "image": "https://play-lh.googleusercontent.com/Uy_QNsH6jGJWw4SFoNB6T5ZHmwvVRI0nTTL0qlExEllM-6ZVFTrJS8TUvD1vbV73MIj1=w240-h480-rw",
+        "image": "18.png",
         "title": "BudgetMate",
         "companyName": "FinLogic Apps",
         "id": 18,
@@ -594,7 +594,7 @@
         ]
     },
     {
-        "image": "https://img.utdstc.com/icon/ac8/a1d/ac8a1d5d11617390b5335e97e6f5430127abcbd5e5a60a8e9d406f118d1b6db7:200",
+        "image": "19.webp",
         "title": "CleanBoost",
         "companyName": "SysCore Tools",
         "id": 19,
@@ -627,7 +627,7 @@
         ]
     },
     {
-        "image": "https://play-lh.googleusercontent.com/b8KnrvaeKBZVU0Rn8wZGe6ormal4-w6NOzr1zc17LoxQaDoOUBFFbO0aGQxSXPcFp7vO=w240-h480-rw",
+        "image": "20.jpg",
         "title": "StreamBox",
         "companyName": "NovaPlay Media",
         "id": 20,
@@ -660,7 +660,7 @@
         ]
     },
     {
-        "image": "https://play-lh.googleusercontent.com/X8TkkAeihS_BSaZtGQe16sGD3fX3j8FAFlD7sDSzDcrmbbyiLVRO26weNjJSJKZE8Her=w240-h480-rw",
+        "image": "21.jpg",
         "title": "PhotoSnap",
         "companyName": "PixelWorks Studio",
         "id": 21,
@@ -693,7 +693,7 @@
         ]
     },
     {
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWzf6Ptj7SlUi4tpr8Rn8vcDXKLG4WTEhtFw&s",
+        "image": "22.jpg",
         "title": "NoteSync",
         "companyName": "CloudBridge Inc.",
         "id": 22,
@@ -726,7 +726,7 @@
         ]
     },
     {
-        "image": "https://play-lh.googleusercontent.com/KXV-7mxX67hqJCUbq5oqycmF1X2G9E0bE_uTuFhMawKmZKKNOO4d2sLENNfdHPW9ASCu",
+        "image": "23.jpg",
         "title": "FitJourney",
         "companyName": "HealthTrackers Ltd.",
         "id": 23,
@@ -759,7 +759,7 @@
         ]
     },
     {
-        "image": "https://cdn-icons-png.flaticon.com/512/5230/5230593.png",
+        "image": "24.png",
         "title": "MindMapper",
         "companyName": "BrainWave Solutions",
         "id": 24,
@@ -792,7 +792,7 @@
         ]
     },
     {
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQICWHGqqIRtvK9sAzhwHdrgsc1vClvvkCLQA&s",
+        "image": "25.jpg",
         "title": "QuickScan",
         "companyName": "ScanTech Solutions",
         "id": 25,
@@ -825,7 +825,7 @@
         ]
     },
     {
-        "image": "https://play-lh.googleusercontent.com/S5cHQc3S-_idZUyHtxxup7PlZ1mr7kjYVkuiB8klEIqm2OdotHkK1Dwyym-HorMDSbc",
+        "image": "26.png",
         "title": "TravelMate",
         "companyName": "Wanderlust Tech",
         "id": 26,
@@ -858,7 +858,7 @@
         ]
     },
     {
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfsSf3FagCQJmesDwn9NQrhhE2wbMUK6QJNw&s",
+        "image": "27.jpg",
         "title": "StudyBuddy",
         "companyName": "EduSmart Co.",
         "id": 27,
@@ -891,7 +891,7 @@
         ]
     },
     {
-        "image": "https://play-lh.googleusercontent.com/hP0P9e1E14M4DjzLN0BNP_v_mNKKLH4eK1F9gdDp05B6_YB_t3bIh-ZAsPjGElDFIQ=w240-h480-rw",
+        "image": "28.webp",
         "title": "QuickNotes",
         "companyName": "NoteFlow Inc.",
         "id": 28,
@@ -924,7 +924,7 @@
         ]
     },
     {
-        "image": "https://play-lh.googleusercontent.com/RNy9A2MJ23YJuMfGat8HCk4OciBflKAZfsYTqXj4hM-9bmJ2tL2ol9gpceZsaUpDqw=w600-h300-pc0xffffff-pd",
+        "image": "29.jpg",
         "title": "FitTrack Pro",
         "companyName": "ZenMotion Health",
         "id": 29,
@@ -957,7 +957,7 @@
         ]
     },
     {
-        "image": "https://play-lh.googleusercontent.com/KhN_IbfA9Lok5ooFFLrnWx2-2bZqrX4KeD5A8JUppufxPyGGWk4wDOcteFQxSsUg3PjZ",
+        "image": "30.png",
         "title": "SecureVault",
         "companyName": "CipherLock Technologies",
         "id": 30,

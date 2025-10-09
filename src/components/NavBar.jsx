@@ -14,7 +14,7 @@ const NavBar = () => {
     return (
         <div>
             <div>
-                <div className='bg-white border-b-1 border-b-gray-400 py-2 z-999 w-full max-[750px]:fixed max-[750px]:top-0'>
+                <div className='bg-white border-b-1 border-b-gray-300 py-2 z-999 w-full max-[750px]:fixed max-[750px]:top-0'>
                     <div className='container flex justify-between items-center max-[750px]:flex-wrap  max-[750px]:justify-around'>
                         <div className='flex justify-between items-center max-[750px]:w-full'>
                             <Link to='/' className='flex gap-2 text-nowrap items-center text-2xl font-bold'><img src='/logo.png' className='w-[50px] h-[50px]' /><div className='bg-linear-to-br bg-clip-text text-transparent from-[#632EE3] to-[#9F62F2]'>{AppName}</div></Link>

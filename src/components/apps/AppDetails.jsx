@@ -65,9 +65,9 @@ const AppDetailsView = ({ appId, dataPromise }) => {
 
     return (
         <div>
-            <div className='container py-15'>
-                <div className='flex gap-5 max-[700px]:flex-wrap'>
-                    <div><img className='w-[300px] aspect-square' src={image ? image : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/2048px-No_image_available.svg.png"} /></div>
+            <div className='container py-12 max-[600px]:py-9'>
+                <div className='bg-white rounded-md shadow-md m-2 p-3 flex gap-5 max-[700px]:flex-wrap'>
+                    <div><img className='w-[300px] aspect-square' src={image ? `/appIcons/${image}` : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/2048px-No_image_available.svg.png"} /></div>
                     <div className='w-full flex flex-col justify-between gap-3'>
                         <div className='text-4xl font-bold max-[800px]:text-3xl max-[600px]:text-2xl'>{title}</div>
                         <div >Developed by <a href='#developed' className='text-black font-semibold'>{companyName}</a></div>
@@ -92,15 +92,15 @@ const AppDetailsView = ({ appId, dataPromise }) => {
                         <div className='flex gap-4  flex-wrap'>
                             <button
                                 onClick={(e) => { if (e.target.innerText.includes("Install Now") == false) { return; } const tid = toast.loading("Installing..."); install(e, id, () => { setInstalled(true); toast.update(tid, { render: "Installed...", type: "success", isLoading: false, autoClose: 700 }); }) }}
-                                className={"bg-[#00D390] text-white py-3 px-6 hover:bg-[#01553a] transition ease-in-out rounded-md " + (isInstalled ? "bg-gray-400 hover:bg-gray-400" : "")}>{isInstalled ? "Installed" : `Install Now (${size}MB)`}</button>
+                                className={"bg-[#00D390] text-white py-3 px-6 hover:bg-[#01553a] transition ease-in-out rounded-md shadow-md " + (isInstalled ? "bg-gray-400 hover:bg-gray-400" : "")}>{isInstalled ? "Installed" : `Install Now (${size}MB)`}</button>
 
                             {isInstalled && <button
                                 onClick={(e) => { const tid = toast.loading("Uninstalling..."); uninstall(e, id, () => { setInstalled(false); toast.update(tid, { render: "Uninstalled...", type: "success", isLoading: false, autoClose: 700 }); }) }}
-                                className={"bg-[#00D390] text-white py-3 px-6 hover:bg-[#01553a] transition ease-in-out rounded-md " + (isInstalled ? "" : "hidden")}>Uninstall</button>}
+                                className={"bg-[#00D390] text-white py-3 px-6 hover:bg-[#01553a] transition ease-in-out rounded-md shadow-md " + (isInstalled ? "" : "hidden")}>Uninstall</button>}
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className='bg-white rounded-md shadow-md m-2 p-3'>
                     <div className='text-2xl font-bold'>Ratings</div>
                     <div className='h-[300px] max-[800px]:h-[250px]'>
                         <ResponsiveContainer width="100%" height='100%'>
@@ -113,7 +113,7 @@ const AppDetailsView = ({ appId, dataPromise }) => {
                         </ResponsiveContainer>
                     </div>
                 </div>
-                <div>
+                <div className='bg-white rounded-md shadow-md m-2 p-3'>
                     <div className='text-2xl font-bold'>Description</div>
                     <div>
                         {description}
