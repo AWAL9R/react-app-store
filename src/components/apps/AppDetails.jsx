@@ -104,7 +104,7 @@ const AppDetailsView = ({ appId, dataPromise }) => {
                     <div className='text-2xl font-bold'>Ratings</div>
                     <div className='h-[300px] max-[800px]:h-[250px]'>
                         <ResponsiveContainer width="100%" height='100%'  >
-                            <BarChart layout="vertical" data={ratings} barCategoryGap="15%" margin={{ top: 20, right: 20, left: 20, bottom: 40 }}>
+                            <BarChart layout="vertical" data={ratings} barCategoryGap="15%" margin={{ top: 20, right: 5, left: 5, bottom: 40 }}>
                                 <XAxis type='number' label={{ value: 'Ratings', position: 'insideBottom', offset: -10, fill: '#0000ff' }}  />
                                 <YAxis type='category' dataKey="name" stroke="#8884d8" />
                                 <Tooltip />
