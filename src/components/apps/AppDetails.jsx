@@ -95,7 +95,7 @@ const AppDetailsView = ({ appId, dataPromise }) => {
                                 className={"bg-[#00D390] text-white py-3 px-6 hover:bg-[#01553a] transition ease-in-out rounded-md shadow-md " + (isInstalled ? "bg-gray-400 hover:bg-gray-400" : "")}>{isInstalled ? "Installed" : `Install Now (${size}MB)`}</button>
 
                             {isInstalled && <button
-                                onClick={(e) => { const tid = toast.loading(title + " is Uninstalling..."); uninstall(e, id, () => { setInstalled(false); toast.update(tid, { render: title + " is Uninstalled...", type: "success", isLoading: false, autoClose: 700 }); }) }}
+                                onClick={(e) => { if (e.target.innerText.trim().toLowerCase()!=="uninstall") { return; } const tid = toast.loading(title + " is Uninstalling..."); uninstall(e, id, () => { setInstalled(false); toast.update(tid, { render: title + " is Uninstalled...", type: "success", isLoading: false, autoClose: 700 }); }) }}
                                 className={"bg-[#00D390] text-white py-3 px-6 hover:bg-[#01553a] transition ease-in-out rounded-md shadow-md " + (isInstalled ? "" : "hidden")}>Uninstall</button>}
                         </div>
                     </div>

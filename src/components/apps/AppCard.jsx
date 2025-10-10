@@ -37,7 +37,7 @@ export const AppCardInline = ({ app, isInstalled, removeInstalled }) => {
                 </div>
                 </div>
                 <div className="flex-1 text-right"> 
-                    <button onClick={(e) => { if(isInstalled && removeInstalled){  removeInstalled(e, id, title); }  e.preventDefault(); e.stopPropagation(); }} className={"bg-[#00D390] text-white py-3 px-6 hover:bg-[#01553a] transition ease-in-out rounded-md shadow-md "+(!isInstalled?"bg-gray-400 hover:bg-gray-400":"")}>{isInstalled?"Uninstall" : `Install Now (${size}MB)`}</button>
+                    <button onClick={(e) => {  e.preventDefault(); e.stopPropagation(); if (e.target.innerText.trim().toLowerCase()!=="uninstall") { return; } if(isInstalled && removeInstalled){  removeInstalled(e, id, title); }  }} className={"bg-[#00D390] text-white py-3 px-6 hover:bg-[#01553a] transition ease-in-out rounded-md shadow-md "+(!isInstalled?"bg-gray-400 hover:bg-gray-400":"")}>{isInstalled?"Uninstall" : `Install Now (${size}MB)`}</button>
                   </div>
             </div>
         </Link>
