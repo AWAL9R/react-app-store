@@ -66,7 +66,7 @@ const AppDetailsView = ({ appId, dataPromise }) => {
     return (
         <div>
             <div className='container py-12 max-[600px]:py-9'>
-                <div className='bg-white rounded-md shadow-md m-2 p-3 flex gap-5 max-[700px]:flex-wrap'>
+                <div className='bg-white rounded-md shadow-md my-2 p-3 flex gap-5 max-[700px]:flex-wrap'>
                     <div><img className='w-[300px] aspect-square' src={image ? `/appIcons/${image}` : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/2048px-No_image_available.svg.png"} /></div>
                     <div className='w-full flex flex-col justify-between gap-3'>
                         <div className='text-4xl font-bold max-[800px]:text-3xl max-[600px]:text-2xl'>{title}</div>
@@ -100,7 +100,7 @@ const AppDetailsView = ({ appId, dataPromise }) => {
                         </div>
                     </div>
                 </div>
-                <div className='bg-white rounded-md shadow-md m-2 p-3'>
+                <div className='bg-white rounded-md shadow-md my-2 p-3'>
                     <div className='text-2xl font-bold'>Ratings</div>
                     <div className='h-[300px] max-[800px]:h-[250px]'>
                         <ResponsiveContainer width="100%" height='100%'  >
@@ -113,7 +113,7 @@ const AppDetailsView = ({ appId, dataPromise }) => {
                         </ResponsiveContainer>
                     </div>
                 </div>
-                <div className='bg-white rounded-md shadow-md m-2 p-3'>
+                <div className='bg-white rounded-md shadow-md my-2 p-3'>
                     <div className='text-2xl font-bold'>Description</div>
                     <div>
                         {description}
